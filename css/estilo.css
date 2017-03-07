@@ -1,0 +1,33 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar-inverse {
+  border-radius: 0px;
+  font-size: 18px;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #c5c5c5;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+  font-family: 'Kalam', cursive;
+  font-weight: bold;
+}
+
+.jumbotron h1 {
+  font-size: 3em;
+}
+
+.img-thumbnail {
+  margin-right: 20px;
+  vertical-align: baseline;
+  border: 1px solid #989898;
+}
+
+#intro {
+  display: inline-block;
+  width: 800px;
+}

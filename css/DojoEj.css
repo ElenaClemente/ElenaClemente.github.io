@@ -1,0 +1,130 @@
+
+.navigation {
+  background-color: rgba(255, 255, 255, 0.9);
+  height: auto;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.navigation ul {
+  padding: 0;
+}
+
+.navigation li {
+  color: #666666;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin: 20px;
+  text-transform: uppercase;
+}
+
+/** Right side styling **/
+
+.content-box {
+  background: rgba(255, 255, 255, 0.9);
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  width: 80%;
+  overflow: visible;
+}
+
+.content-header {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: -50px;
+  height: 160px;
+}
+
+.content-body {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+
+h1 {
+  background: #05A8AA;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 40px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  top: 120px;
+  width: 70%;
+}
+
+h2 {
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+p {
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 34px;
+  min-width: 200px;
+  max-width: 800px;
+  min-height: 100px;
+  max-height: 200px;
+}
+
+.content-box ul {
+  padding: 40px 0px;
+}
+
+.content-box li {
+  background-color: #05A8AA;
+  display: inline-block;
+  list-style: none;
+  margin-bottom: 3px;
+  padding: 20px 40px;
+  width: 300px;
+}
+
+.btn {
+  color: #05A8AA;
+  border: 1px solid #05A8AA;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0px;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/*.btn:hover {
+  background-color: #05A8AA;
+  border: 1px solid #05A8AA;
+  /*color: #FFF;*/
