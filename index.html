@@ -22,9 +22,9 @@
   </head>
 
 <body>
-
+<script src="js/email.js"></script>
   <!-- Menú superior -->
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
 
     <div class="navbar-header">
@@ -58,7 +58,7 @@
   <img src="images/Avatar.png" alt="Foto DNI Elena Clemente Ortiz" class="img-thumbnail">
   <div id="intro">
     <h1>Hola, mundo!</h1>
-    <p>Soy Elena, una Ingeniera en Geomática y Topografía actualmente descubriendo el mundo del desarrollo GIS.
+    <p class="text-justify">Soy Elena, una Ingeniera en Geomática y Topografía actualmente inmersa en el mundo del desarrollo GIS.
       Aficionada a trabajar con las aplicaciones de escritorio GIS me encanta esta nueva perspectiva de poder
       incorporar nuevas funcionalidades a través de líneas de código. <br>
       Disfruto aprendiendo cosas nuevas en el día a día, actualmente de la mano de ESRI y BBVA,
@@ -68,8 +68,8 @@
   </div>
   </div>
 
-  <h2>Experiencia Profesional</h2><br>
   <div id="experiencia">
+    <h2 class="titulo">Experiencia Profesional</h2>
       <table class="table">
          <thead class="thead-inverse">
           <tr>
@@ -92,22 +92,62 @@
              <td>Valencia</td>
              <td>Octubre 2015 - Julio 2016</td>
            </tr>
-
          </tbody>
       </table>
   </div>
 
-  <h2 id="habilidades">Habilidades y conocimientos</h2>
-  <ul>
-    <li><strong>Desarrollo web:</strong> HTML5, CSS3, JavaScript, </li>
-    <li><strong>Progamas GIS:</strong> ArcGIS, gvsig, </li>
-  </ul>
+  <div id="formacion">
+    <h2 class="titulo">Formación</h2>
+    <ol>
+      <li>Grado en Ingeniería Geomática y Topografía, Universidad Politécnica de Valencia, 2016</li>
+      <li>Master en Sistemas de Información Geográfica, Esri España, Actualmente</li>
+    </ol>
+  </div>
 
-  <h2 id="educacion">Educación</h2>
-  <ol>
-    <li>Grado en Ingeniería Geomática y Topografía, Universidad Politécnica de Valencia, 2016</li>
-    <li>Master en Sistemas de Información Geográfica, Esri España, Actualmente</li>
-  </ol>
+  <div id="conocimientos">
+    <h2 class="titulo">Conocimientos</h2>
+    <ul>
+      <li><strong>Desarrollo web:</strong> HTML5, CSS3, JavaScript, </li>
+      <li><strong>Progamas GIS:</strong> ArcGIS, gvsig, </li>
+    </ul>
+  </div>
+
+  <div id="contacto">
+    <h2 class="titulo">Contacto</h2>
+    <form id="email" method="GET">
+
+        <label for="to">Para:</label>
+        <input id="to" type="email" required>
+        <label for="topic">Temática: </label>
+        <select id="topic">
+          <option>-- Elige un tema --</option>
+          <option>Consulta</option>
+          <option>Propuesta</option>
+          <option>Reporte</option>
+          <option>Otro</option>
+        </select>
+
+        <label for="subject">Asunto: </label>
+        <input id="subject" type="text" required>
+
+        <label for="body">Cuerpo:</label>
+        <textarea id="body" required></textarea>
+
+        <button type="submit" class="pure-button pure-button-primary">Enviar</button>
+
+     </form>
+  </div>
+
+  <p id="footer" class="center">
+    <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Felenaclemente.github.io%2F" target="_blank">
+      <img style="border:0;width:88px;height:31px" src="images/valid-html5.png" alt="Valid HTML!">
+    </a>
+
+    <a href="https://jigsaw.w3.org/css-validator/validator?uri=+ElenaClemente.github.io%2Fcss%2Festilo.css+&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+      <img style="border:0;width:88px;height:31px" src="images/valid-css.png" alt="Valid CSS!">
+    </a>
+    <br>Gracias por visitar mi página, seguiré mejorándola.
+  </p>
 
 </div>
 
