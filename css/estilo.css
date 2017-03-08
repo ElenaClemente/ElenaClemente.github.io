@@ -21,6 +21,11 @@ body {
   font-size: 3em;
 }
 
+.jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .img-thumbnail {
   margin-right: 20px;
   vertical-align: baseline;
@@ -30,4 +35,31 @@ body {
 #intro {
   display: inline-block;
   width: 800px;
+}
+
+#experiencia {
+  display: inline-block;
+  text-align: center;
+  height: 35%;
+  width: 100%;
+  float: left;
+  font-size: 1.3em;
+}
+.table thead th {
+  text-align: center;
+  background-color: #3f3f3f;
+  color: white;
+}
+
+.thead-inverse{
+  /*position: fixed;*/
+  text-align: center;
+}
+
+.row {
+  position: absolute;
+  z-index: 100;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
 }
