@@ -3,19 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <!-- Para que se vea bien en los dispositivos móviles -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Elena Clemente</title>
+  <link rel="icon" href="images/Avatar.png" type="image/x-icon" />
   <!--Garantizar que la página se verá igual en todos los navegadores -->
   <link rel="stylesheet" href="css/reset.css">
-
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-  integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
   integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
   integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
 
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Kalam:400,700" rel="stylesheet">
@@ -24,9 +22,10 @@
 <body>
 <script src="js/email.js"></script>
   <!-- Menú superior -->
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <!-- Cambiar por tu nombre -->
+    <a class="navbar-brand" href="#">Elena Clemente Ortiz</a>
     <div class="navbar-header">
       <button  type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" >
         <span class="sr-only">Toggle navigation</span>
@@ -34,42 +33,41 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-
-      <!-- Cambiar por tu nombre -->
-      <a class="navbar-brand" href="#">Elena Clemente Ortiz</a>
     </div>
 
-    <div id="navbar" class="collapse navbar-collapse">
+    <div id="navbar" class="nav-collapse collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <!-- Modificar esta lista con las secciones de tu curriculum -->
-        <li class="active"><a href="#about">Sobre mí</a></li>
+        <!-- Modificar esta lista con las secciones de mi curriculum -->
+        <li class="active"><a href="#intro">Sobre mí</a></li>
         <li><a href="#experiencia">Experiencia</a></li>
         <li><a href="#formacion">Formación</a></li>
         <li><a href="#conocimientos">Conocimientos</a></li>
+        <li><a href="#otros">Otros</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </div>
-  </div>
+</div>
 </nav>
 
 <div class="container">
 
   <div class="jumbotron">
-  <img src="images/Avatar.png" alt="Foto DNI Elena Clemente Ortiz" class="img-thumbnail">
-  <div id="intro">
-    <h1>Hola, mundo!</h1>
-    <p class="text-justify">Soy Elena, una Ingeniera en Geomática y Topografía actualmente inmersa en el mundo del desarrollo GIS.
-      Aficionada a trabajar con las aplicaciones de escritorio GIS me encanta esta nueva perspectiva de poder
-      incorporar nuevas funcionalidades a través de líneas de código. <br>
-      Disfruto aprendiendo cosas nuevas en el día a día, actualmente de la mano de ESRI y BBVA,
-      pero también con muchas ganas de introducirme en el mundo GIS laboral.
-    </p>
-    <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
-  </div>
+    <div class="floating-box">
+      <img src="images/Avatar.png" alt="Avatar personal" class="img-thumbnail">
+    </div>
+    <div id="intro" class="after-box">
+      <h2>Sobre mí</h2>
+      <p class="text-justify">Soy Elena, una Ingeniera en Geomática y Topografía actualmente inmersa en el mundo del desarrollo GIS.
+        Aficionada a trabajar con las aplicaciones de escritorio GIS me encanta esta nueva perspectiva de poder
+        incorporar nuevas funcionalidades a través de líneas de código. <br>
+        Disfruto aprendiendo cosas nuevas en el día a día, actualmente de la mano de ESRI y BBVA,
+        pero también con muchas ganas de introducirme en el mundo GIS laboral.
+      </p>
+    </div>
   </div>
 
+  <h2>Experiencia Profesional</h2>
   <div id="experiencia">
-    <h2 class="titulo">Experiencia Profesional</h2>
       <table class="table">
          <thead class="thead-inverse">
           <tr>
@@ -84,36 +82,60 @@
              <td>BBVA Ingeniería España</td>
              <td>Becaria en Soluciones de Arquitectura España</td>
              <td>Madrid</td>
-             <td>Enero 2016 - Actualidad</td>
+             <td>Ene 2016 - Actualidad</td>
            </tr>
            <tr>
              <td>Fundación Servipoli UPV</td>
              <td>Auxiliar Administrativa en la Unidad de Prácticas en Empresas</td>
              <td>Valencia</td>
-             <td>Octubre 2015 - Julio 2016</td>
+             <td>Oct 2015 - Jul 2016</td>
+           </tr>
+           <tr>
+             <td>Fundación Servipoli UPV</td>
+             <td>Auxiliar de apoyo como Coordinadora pase de encuestas</td>
+             <td>Valencia</td>
+             <td>Nov 2014 - May 2015</td>
            </tr>
          </tbody>
       </table>
   </div>
 
-  <div id="formacion">
-    <h2 class="titulo">Formación</h2>
-    <ol>
-      <li>Grado en Ingeniería Geomática y Topografía, Universidad Politécnica de Valencia, 2016</li>
-      <li>Master en Sistemas de Información Geográfica, Esri España, Actualmente</li>
-    </ol>
-  </div>
+  <h2 id="formacion">Formación</h2>
+  <div class="media">
+      <div class="media-left">
+        <a target="_blank" href="http://mastergis.esri.es/">
+          <img class="media-object" src="images/esriEspaña.jpg" alt="ESRI España">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Máster en Sistemas de Información Geográfica</h4>
+        ESRI España <br>
+      </div>
+    </div>
+    <div class="media">
+      <div class="media-left">
+        <a target="_blank" href="http://www.upv.es/titulaciones/GIGT/index-es.html">
+          <img class="media-object" src="images/upv.png" alt="UPV">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Grado en Ingeniería Geomática y Topografía</h4>
+        Universidad Politécnica de Valencia <br>
+      </div>
+    </div>
 
+  <h2>Conocimientos</h2>
   <div id="conocimientos">
-    <h2 class="titulo">Conocimientos</h2>
     <ul>
       <li><strong>Desarrollo web:</strong> HTML5, CSS3, JavaScript, </li>
       <li><strong>Progamas GIS:</strong> ArcGIS, gvsig, </li>
     </ul>
   </div>
 
+  <h2 id="otros">Otros</h2>
+
+  <h2>Contacto</h2>
   <div id="contacto">
-    <h2 class="titulo">Contacto</h2>
     <form id="email" method="GET">
 
         <label for="to">Para:</label>
