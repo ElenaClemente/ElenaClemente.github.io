@@ -120,7 +120,7 @@ h2 {
 /**......................CONTACTO......................**/
 form {
     border: 1px dotted #ccc;
-    padding: 2rem;
+    padding: 10px;
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
@@ -178,6 +178,16 @@ input:focus, textarea:focus, select:focus{
 }
 input:focus, textarea:focus, keygen:focus, select:focus {
 	outline-offset: -2px;
+}
+
+.redes {
+  text-align: center;
+}
+
+.gmail {
+  font-size: 1.3em;
+  font-weight: bold;
+
 }
 
 
